@@ -17,10 +17,21 @@ class gui(guiqt, Ui_MainWindow):
 
     @pyqtSlot(bool)
     def on_btn_add_clicked(self,b):
-        lb = buttonwc(self.groupBox)
+        lb = buttonwc()
         lb.setText(u'我是标签')
-        self.groupBox.update()
+        lb.Closed.connect(self.on_remove_lb)
+        self.groupLayout.addWidget(lb)
 
+    @pyqtSlot(bool)
+    def on_btn_del_clicked(self,b):
+        self.groupLayout.removeWidget()
+
+    def on_remove_lb(self):
+        lb=self.sender()
+        lb.hide()
+        self.groupLayout.removeWidget(lb)
+
+        #self.groupBox.update()
 
 if __name__ == '__main__':
     app = QtGui.QApplication(sys.argv)

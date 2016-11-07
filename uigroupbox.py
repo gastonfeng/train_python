@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file '<PyQt4.QtCore.QFile object at 0x03210E88>'
+# Form implementation generated from reading ui file '<PyQt4.QtCore.QFile object at 0x0321AE88>'
 #
-# Created: Thu Nov 03 18:07:12 2016
+# Created: Tue Nov 08 00:13:11 2016
 #      by: PyQt4 UI code generator 4.9.6
 #
 # WARNING! All changes made in this file will be lost!
@@ -40,9 +40,13 @@ class Ui_MainWindow(object):
         self.groupBox.setObjectName(_fromUtf8("groupBox"))
         self.gridLayout_2 = QtGui.QGridLayout(self.groupBox)
         self.gridLayout_2.setObjectName(_fromUtf8("gridLayout_2"))
-        self.gridLayout = QtGui.QGridLayout()
-        self.gridLayout.setObjectName(_fromUtf8("gridLayout"))
-        self.gridLayout_2.addLayout(self.gridLayout, 0, 0, 1, 1)
+        spacerItem = QtGui.QSpacerItem(40, 20, QtGui.QSizePolicy.Expanding, QtGui.QSizePolicy.Minimum)
+        self.gridLayout_2.addItem(spacerItem, 1, 1, 1, 1)
+        spacerItem1 = QtGui.QSpacerItem(20, 40, QtGui.QSizePolicy.Minimum, QtGui.QSizePolicy.Expanding)
+        self.gridLayout_2.addItem(spacerItem1, 2, 0, 1, 1)
+        self.groupLayout = QtGui.QVBoxLayout()
+        self.groupLayout.setObjectName(_fromUtf8("groupLayout"))
+        self.gridLayout_2.addLayout(self.groupLayout, 0, 0, 1, 1)
         self.verticalLayout.addWidget(self.groupBox)
         self.horizontalLayout = QtGui.QHBoxLayout()
         self.horizontalLayout.setObjectName(_fromUtf8("horizontalLayout"))
@@ -55,8 +59,8 @@ class Ui_MainWindow(object):
         self.verticalLayout.addLayout(self.horizontalLayout)
         self.horizontalLayout_2 = QtGui.QHBoxLayout()
         self.horizontalLayout_2.setObjectName(_fromUtf8("horizontalLayout_2"))
-        spacerItem = QtGui.QSpacerItem(40, 20, QtGui.QSizePolicy.Expanding, QtGui.QSizePolicy.Minimum)
-        self.horizontalLayout_2.addItem(spacerItem)
+        spacerItem2 = QtGui.QSpacerItem(40, 20, QtGui.QSizePolicy.Expanding, QtGui.QSizePolicy.Minimum)
+        self.horizontalLayout_2.addItem(spacerItem2)
         self.btn_add = QtGui.QPushButton(self.centralwidget)
         self.btn_add.setObjectName(_fromUtf8("btn_add"))
         self.horizontalLayout_2.addWidget(self.btn_add)
