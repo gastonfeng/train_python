@@ -8,9 +8,11 @@ import urllib
 
 class MyRequestHandler(BaseHTTPServer.BaseHTTPRequestHandler):
     def do_GET(self):
+        print 'GET:'
         self.process(2)
 
     def do_POST(self):
+        print 'POST:'
         self.process(1)
 
     def process(self, type):
