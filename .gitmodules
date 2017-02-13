@@ -1,0 +1,3 @@
+[submodule "pyqtmate"]
+	path = pyqtmate
+	url = https://github.com/gastonfeng/pyqtmate.git
